@@ -63,9 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\death.cs" />
-    <Compile Include="Assets\leftDooogle.cs" />
-    <Compile Include="Assets\rightDooogle.cs" />
+    <Compile Include="Assets\Scripts\death.cs" />
+    <Compile Include="Assets\Scripts\leftDooogle.cs" />
+    <Compile Include="Assets\Scripts\rightDooogle.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/3 курс/тпри/gulnja/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
