@@ -5,16 +5,13 @@ using UnityEngine;
 public class BigStick : MonoBehaviour
 {
     private bool isPressed = false;
-
-    private Vector2 startPos;
-    private Vector2 endPos;
-    public float step;
-    private float progress;
+    private Vector2 direction;
+    public float acceleration;
+    public Rigidbody2D rb;
 
     void Start()
     {
-        startPos = transform.position;
-        endPos = new Vector2(0.0f, 1.0f);
+        direction = new Vector2(0.0f, 1.0f);
     }
 
     public void OnMouseDown()
@@ -32,13 +29,8 @@ public class BigStick : MonoBehaviour
     {
        if(isPressed)
         {
-            transform.position = Vector2.Lerp(transform.position, startPos + endPos, progress);
-            progress += step;
+            rb.AddForce(direction.normalized * acceleration);
         }
-        else
-        {
-            transform.position = Vector2.Lerp(transform.position, startPos, progress);
-            progress += step;
-        }
+
     }
 }
