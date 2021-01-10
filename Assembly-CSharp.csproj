@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BigStick.cs" />
     <Compile Include="Assets\Scripts\CoinController.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\UI_scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\UI_scripts\Levels.cs" />

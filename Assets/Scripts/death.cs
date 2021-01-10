@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class death : MonoBehaviour
 {
-    
-     void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+        if (other.tag == "Death")
+        {
+            Destroy(this.gameObject);
+        }
     }
-
-    
 }
