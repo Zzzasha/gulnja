@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BigStick.cs" />
+    <Compile Include="Assets\Scripts\CoinController.cs" />
     <Compile Include="Assets\Scripts\death.cs" />
     <Compile Include="Assets\Scripts\leftDooogle.cs" />
     <Compile Include="Assets\Scripts\rightDooogle.cs" />
