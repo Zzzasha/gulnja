@@ -10,4 +10,9 @@ public class GameUI : MonoBehaviour
         SceneManager.LoadScene("Levels");
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }
