@@ -9,6 +9,7 @@ TagManager:
   - secondPortal
   - Death
   - Planet
+  - groot
   layers:
   - Default
   - TransparentFX

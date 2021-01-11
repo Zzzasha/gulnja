@@ -12,6 +12,8 @@ public class BallController : MonoBehaviour
     Text textComponentGameOver;
     Text textComponentVictory;
     public AudioClip CoinSound;
+    public AudioClip hitSound;
+    public AudioClip destroySound;
     private int coin;
     private Animation anim;
 
@@ -33,16 +35,20 @@ public class BallController : MonoBehaviour
             AudioSource.PlayClipAtPoint(CoinSound, transform.position);
             Destroy(other.gameObject);
         }
-
         if (other.tag == "Death")
         {
             Destroy(this.gameObject);
+        }
+        if(other.tag=="groot")
+        {
+            AudioSource.PlayClipAtPoint(hitSound, transform.position);
         }
 
         if (other.tag == "Planet")
         {
             anim = other.GetComponent<Animation>();
             anim.PlayQueued("planet");
+            AudioSource.PlayClipAtPoint(destroySound, transform.position);
             StartCoroutine(Pause());
             Destroy(other.gameObject);
         }

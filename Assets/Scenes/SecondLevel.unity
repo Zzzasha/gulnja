@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1394080051}
-  planet: {fileID: 0}
+  planet: {fileID: 1269003156}
   UI: {fileID: 1984893899}
   GameOverScr: {fileID: 1722278525}
   Victory: {fileID: 1762325623}
@@ -2171,7 +2171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &743246595 stripped
 Transform:
@@ -2946,7 +2946,7 @@ PrefabInstance:
     - target: {fileID: 6510863937241591210, guid: 5b3253fc2d4d85740b6b97329c8170ce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6510863937241591210, guid: 5b3253fc2d4d85740b6b97329c8170ce,
         type: 3}
@@ -4078,6 +4078,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2145408309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1269003156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6510863937241591221, guid: 5b3253fc2d4d85740b6b97329c8170ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 832461079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1286551145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4869,7 +4875,7 @@ PrefabInstance:
     - target: {fileID: 8948410386353190961, guid: f618a9f748955e444b2bb1e0c70b1f41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8948410386353190961, guid: f618a9f748955e444b2bb1e0c70b1f41,
         type: 3}
@@ -4901,6 +4907,16 @@ PrefabInstance:
       propertyPath: TextObjectVictory
       value: 
       objectReference: {fileID: 349981941}
+    - target: {fileID: 8948410386353190963, guid: f618a9f748955e444b2bb1e0c70b1f41,
+        type: 3}
+      propertyPath: destroySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c2adda72aae7c045be13fefe6333448, type: 3}
+    - target: {fileID: 8948410386353190963, guid: f618a9f748955e444b2bb1e0c70b1f41,
+        type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: fdaca348c01ff334ab8deb0b10cda5ac, type: 3}
     - target: {fileID: 8948410386353190964, guid: f618a9f748955e444b2bb1e0c70b1f41,
         type: 3}
       propertyPath: m_Name
@@ -6273,7 +6289,7 @@ Transform:
   - {fileID: 1259129517}
   - {fileID: 788065550}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.95}
 --- !u!1001 &2127054251
 PrefabInstance:
