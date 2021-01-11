@@ -1306,7 +1306,7 @@ RectTransform:
   - {fileID: 384988314}
   - {fileID: 1515270914}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1390,6 +1390,16 @@ PrefabInstance:
       propertyPath: TextObjectVictory
       value: 
       objectReference: {fileID: 345730199}
+    - target: {fileID: 8948410386353190963, guid: f618a9f748955e444b2bb1e0c70b1f41,
+        type: 3}
+      propertyPath: destroySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c2adda72aae7c045be13fefe6333448, type: 3}
+    - target: {fileID: 8948410386353190963, guid: f618a9f748955e444b2bb1e0c70b1f41,
+        type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: fdaca348c01ff334ab8deb0b10cda5ac, type: 3}
     - target: {fileID: 8948410386353190964, guid: f618a9f748955e444b2bb1e0c70b1f41,
         type: 3}
       propertyPath: m_Name
@@ -4293,6 +4303,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1851390172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1427003605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6510863937241591221, guid: 5b3253fc2d4d85740b6b97329c8170ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 249268885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441832203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6858,7 +6874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1569785028}
-  planet: {fileID: 0}
+  planet: {fileID: 1427003605}
   UI: {fileID: 769115803}
   GameOverScr: {fileID: 384988313}
   Victory: {fileID: 1515270913}
