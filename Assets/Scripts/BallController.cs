@@ -16,6 +16,7 @@ public class BallController : MonoBehaviour
     public AudioClip destroySound;
     private int coin;
     private Animation anim;
+    private GameObject temp;
 
     void Start()
     {
@@ -46,16 +47,20 @@ public class BallController : MonoBehaviour
 
         if (other.tag == "Planet")
         {
+            temp = other.gameObject;
             anim = other.GetComponent<Animation>();
-            anim.PlayQueued("planet");
+            other.GetComponent<Animator>().SetTrigger("exp");
             AudioSource.PlayClipAtPoint(destroySound, transform.position);
             StartCoroutine(Pause());
-            Destroy(other.gameObject);
+            Debug.Log("pause in000");
+            
         }
     }
 
     IEnumerator Pause()
     {
-        yield return new WaitForSeconds(50);
+        Debug.Log("pause in");
+        yield return new WaitForSeconds(0.2f);
+        Destroy(temp);
     }
 }
