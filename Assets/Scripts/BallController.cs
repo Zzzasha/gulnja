@@ -13,6 +13,7 @@ public class BallController : MonoBehaviour
     Text textComponentVictory;
     public AudioClip CoinSound;
     private int coin;
+    private Animation anim;
 
     void Start()
     {
@@ -40,7 +41,15 @@ public class BallController : MonoBehaviour
 
         if (other.tag == "Planet")
         {
+            anim = other.GetComponent<Animation>();
+            anim.PlayQueued("planet");
+            StartCoroutine(Pause());
             Destroy(other.gameObject);
         }
+    }
+
+    IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(50);
     }
 }
