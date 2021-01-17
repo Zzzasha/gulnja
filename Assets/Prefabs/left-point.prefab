@@ -237,7 +237,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17530575, y: -0.14267257}
+  m_Offset: {x: -0.1039297, y: -0.13672455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -248,7 +248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0943592, y: 0.7965415}
+  m_Size: {x: 1.4036552, y: 1.1098027}
   m_EdgeRadius: 0
 --- !u!82 &5417552915553781997
 AudioSource:
