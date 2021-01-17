@@ -4228,12 +4228,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1851390172}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1427003605 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6510863937241591221, guid: 5b3253fc2d4d85740b6b97329c8170ce,
-    type: 3}
-  m_PrefabInstance: {fileID: 249268885}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441832203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6794,11 +6788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1569785028}
-<<<<<<< HEAD
-  planet: {fileID: 1427003605}
-=======
   planet: {fileID: 1825859857}
->>>>>>> 07dd2309d84f72f8cad7c46d00397fd8cb701b7e
   UI: {fileID: 769115803}
   GameOverScr: {fileID: 384988313}
   Victory: {fileID: 1515270913}

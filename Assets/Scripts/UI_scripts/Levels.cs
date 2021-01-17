@@ -23,4 +23,20 @@ public class Levels : MonoBehaviour
         SceneManager.LoadScene("ThirdLevel");
     }
 
+    public void tutor1()
+    {
+        SceneManager.LoadScene("tutor1");
+    }
+
+    public void tutor2()
+    {
+        SceneManager.LoadScene("tutor2");
+    }
+
+    public void tutor3()
+    {
+        SceneManager.LoadScene("tutor3");
+    }
+
+
 }

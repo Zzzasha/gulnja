@@ -49,11 +49,7 @@ public class BallController : MonoBehaviour
         {
             temp = other.gameObject;
             anim = other.GetComponent<Animation>();
-<<<<<<< HEAD
-            anim.PlayQueued("planet");
-=======
             other.GetComponent<Animator>().SetTrigger("exp");
->>>>>>> 07dd2309d84f72f8cad7c46d00397fd8cb701b7e
             AudioSource.PlayClipAtPoint(destroySound, transform.position);
             StartCoroutine(Pause());
             Debug.Log("pause in000");
